@@ -1,0 +1,35 @@
+# Tokenomics
+
+- Initial Supply: 3,324,324,324,357
+- Burned: ~931,616,056,878
+- Current supply: less than ~2,000,000,000,000 (decreasing every block)
+- Dev has burned all his LP tokens and most of the current liquidity is now community owned.
+
+EGGS started as a LBP on Copper/Fjord to get a fair price and distribution of tokens.
+Link to LBP [here](https://fjordfoundry.com/pools/mainnet/0x04EEECa0d37a238B46DeD385F04F956F6D9656A2).
+LBP managed to accrue around 188.78 ETH.
+Dev exited LBP and used 185 ETH and 175,000,000,000 EGGS to create an Uniswap V2 pool. Setting the price just below final LBP price.
+Some time after dev burned all his LP tokens. Most of the liquidity you see now is community owned.
+
+### Mechanics
+
+EGGS are getting debased every block with a 0.001% rate which is around 7% a day.
+To compensate a little for this decrease you can stake your tokens in either Big or Smol vaults and get rewards.
+Rewards will only get debased upon claim! Rewards are currently set to 10,000,000 EGGS per block.
+Rewards can be changed by dev and is subject to change.
+
+Depositing or claiming will incur 24 hours lock on withdrawals.
+Depositing or claiming will not extend the timer but the timer will reset with another 24 hours.
+The debase is happening for the whole token supply including EGGS in vaults and EGGS in LP.
+Since EGGS in LP also gets debased the amount of EGGS will decrease but the amount of ETH will remain the same.
+That's the beauty of it since the price of EGGS will continue to increase if noone is selling and ETH is stable.
+
+## Contracts
+
+EGGS token has a mint function but the owner is a Timelock contract which has been set to 3 days.
+So everyone has time to react for 3 days if dev does something.
+
+- [EGGS Token Contract](https://etherscan.io/token/0x2e516ba5bf3b7ee47fb99b09eadb60bde80a82e0)
+- [EggChef Farm Contract](https://etherscan.io/address/0xfc6a933a32aa6a382ea06d699a8b788a0bc49fcb)
+- [Full Protect Contract](https://etherscan.io/address/0x98d9f08824798d7fd37bd0dd740069baf31c37e7)
+- [Timelock Contract](https://etherscan.io/address/0x70dcd5cafdfc982bccafa97091f6bca29859149a)

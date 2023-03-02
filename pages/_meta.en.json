@@ -1,0 +1,41 @@
+{
+  "index": {
+    "title": "Intro"
+  },
+  "tokenomics": {
+    "title": "Tokenomics"
+  },
+  "faq": {
+    "title": "FAQ"
+  },
+  "--": {
+    "type": "separator",
+    "title": "Links"
+  },
+  "website_link": {
+    "title": "Website  ↗",
+    "href": "https://eggs.care/",
+    "newWindow": true
+  },
+  "coingecko_link": {
+    "title": "CoinGecko  ↗",
+    "href": "  https://www.coingecko.com/en/coins/eggs",
+    "newWindow": true
+  },
+  "telegram_link": {
+    "title": "Telegram  ↗",
+    "href": "https://t.me/eggsportal",
+    "newWindow": true
+  },
+  "twitter_link": {
+    "title": "Twitter  ↗",
+    "href": "https://twitter.com/EggsCare",
+    "newWindow": true
+  },
+  "github_link": {
+    "title": "Github  ↗",
+    "href": "https://github.com/shuding/nextra",
+    "newWindow": true,
+    "display": "hidden"
+  }
+}
