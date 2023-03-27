@@ -13,8 +13,13 @@
     "newWindow": true
   },
   "coingecko_link": {
-    "title": "CoinGecko  ↗",
+    "title": "CoinGecko EGGS ↗",
     "href": "https://www.coingecko.com/zh/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81/eggs",
+    "newWindow": true
+  },
+  "coingecko_link_aeggs": {
+    "title": "CoinGecko aEGGS ↗",
+    "href": "  https://www.coingecko.com/en/coins/aeggs",
     "newWindow": true
   },
   "telegram_link": {
