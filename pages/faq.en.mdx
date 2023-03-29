@@ -11,39 +11,73 @@ export function Video({ children }) {
 
 # FAQ
 
-## How to buy and stake?
+## 1. Staking
+### 1.1 How do I buy and stake in a vault?
 
 Watch this guide.
 
 <Video />
 
-## Big protec vs Smol protec. Which one should I go for?
+### 1.2 What happens if I do not put EGGS in a vault?
 
-If you've got the cash go for Big protec. You'll need to deposit an equal amount of both $EGGS and $ETH, whereas Smol protec only requires $EGGS.
+Your EGGS will start to debase from the moment you purchase them - for example if the debase rate is 7% per day, you will own 7% less EGGS the day after purchase.
+For this reason, it is highly recommended you put your EGGS in a vault as soon as possible. 
+Please read the tokenomics page for more details on the current debase rate(s).
 
-## Will putting in more money increase the length of my lock period?
+### 1.3 Big protec vs Smol protec. Which one should I go for?
 
-No. Depositing more won't change the lock time, it'll just reset the timer.
+If you have got the cash, Big protec is usually preferable. You will need to deposit an equal amount of both $EGGS and $ETH, whereas Smol protec only requires $EGGS.
 
-## Do the rewards in the vaults get debased too?
+### 1.4 Will putting in more money increase the length of my lock period?
 
-They will only get debased after claim.
+Whenever you make a deposit into a vault, the lock timer will reset, so if you already have EGGS locked in a vault 
+and deposit more into the same vault, the timer will reset. 
 
-## Will making a claim extend my lock period?
+### 1.5 When I withdraw from Big or Smol, I have less EGGS than when I deposited - why is this?
 
-No. Each claim won't change your lock period, it'll just reset the timer for another 24 hours.
+Eggs in Big and Smol will continue to debase despite being in a vault, so when you withdraw there may be less EGGS in the vault. 
+Because the EGGS are in a vault, you will be accumulating EGGS in the form of rewards, which may be greater than the number of EGGS lost to debase, 
+depending on the current APR. 
+Read the tokenomics page and FAQ section for up-to-date numbers on debase rate etc.
 
-## Can the reward rate change in the future?
+### 1.6 Do the rewards in vaults get debased too?
 
-Yes. The dev might adjust the rewards, so stay tuned for any announcements.
+Rewards will only start to debase after you claim them; they are fully protected until then. 
 
-## Will the value of EGGS go up or down due to the debase?
+### 1.7 Will making a claim extend my lock period?
+
+Whenever you claim rewards, the lock timer will reset. 
+
+### 1.8 What happens when the locking period ends for a vault?
+
+Nothing changes at the end of the locking period, it simply means you can withdraw from the vault when you like. 
+For example, if you are in Full protec your EGGS will remain fully protected after the locking period ends. 
+You do not need to re-stake in order to keep the EGGS in a vault.
+
+## 2 Tokenomics
+
+### 2.1 Will I gain EGGS in Smol protec?
+
+In Smol protec, your EGGS are exposed to debase, which means you need to deduct the debase rate from the APR % shown on the website, to calculate the net gain/loss of EGGS. 
+If the debase rate is 7% per day, this is equivalent to 7 * 365 = 2555% per year, which means you will be accumulating more EGGS from rewards if the Smol APR > 2555. 
+
+### 2.2 Will I gain EGGS in Big protec?
+
+To use Big protec, you must first provide liquidity, so 50% of the value being locked in the vault is EGGS, and the other 50% is ETH. 
+The EGGS you put in liquidity will continue to debase at the daily rate, but as they only make up 50% of the total value you locked in LP, 
+the effect of debase on your LP is 1/2 the daily rate. 
+This means if the daily debase rate is 7%, then your LP value will decrease by 3.5% due to debase. 
+Hence, you will be accumulating more EGGS from rewards if the Big APR > 1277.
+
+
+### 2.3 Will the value of EGGS go up or down due to the debase?
 
 If noone is selling then the value of EGGS will remain flat even if there is debase and supply decreases.
-How come this is true? Remember EGGS in LP also gets debased which means that there will be less EGGS but same amount of ETH.
+How come this is true? Remember EGGS in LP also get debased, which means there will be less EGGS but the same amount of ETH.
 The debase of your EGGS is directly proportional to the total supply debase.
 For example, if the total supply is 1000 EGGS and you have 100 EGGS, if the total supply becomes 100 EGGS, your 100 EGGS will become 10 EGGS.
 
+### 2.4 Big vault example
 **Egg scenario assuming no rewards:**
 
 - Total supply: 100 EGGS
@@ -58,7 +92,20 @@ For example, if the total supply is 1000 EGGS and you have 100 EGGS, if the tota
 - 1 EGGS = 2 ETH (now worth more in ETH)
 - The rest staked in smol protec vault (40 EGGS)
 
-## Should I stake or skip it?
 
-Stake away! If you do, you'll earn $EGGS that will only be debased after you claim.
-The debased $EGGS will still keep their value, since the total supply will also be debased 1:1.
+## 3 - Rug-proofing
+
+### 3.1 Can the contracts change at any time?
+
+Dev has put 3-day timelocks on the contracts, so if any changes are made there must be a 3 day wait period before they can be executed. 
+This means there cannot be any quick changes to rug the community.
+
+### 3.2 Do the developers/team own a large proportion of tokens?
+
+No - initial EGGS tokens were fairly distributed among the community. 
+Please read the tokenomics page for more details.
+
+### 3.3 I just checked my wallet and I have less eggs than before, without any on-chain txns, am I being hacked?
+
+No - the EGGS token contract is written to debase during every block, so if you do not put your eggs in a vault your eggs 
+will start to dissappear without any on-chain transactions.
