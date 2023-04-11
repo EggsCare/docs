@@ -1,30 +1,43 @@
 # Tokenomics
 
+EGGS uses a debase mechanism to incentivise locking in vaults: $EGGS on Ethereum mainnet debase 0.001% per block (approximately 7% per day), 
+whereas $aEGGS on Arbitrum debase 0.002% per block (approximately 14% per day). 
+The rewards on each network reflect these differing debase rates: 10 million $EGGS are rewarded per block, 
+and 20 million $aEGGS are rewarded per block. Rewards are discussed further down this page.
+
+This table below summarises the tokenomics of $EGGS and $aEGGS:
+
 | Token Name | Network          | Initial Supply      | Debase Rate (per block)  | Rewards (per block) |
 | :--------: | :--------------: | :-----------------: | :----------------------: | :---------------:   |
 | EGGS       | Ethereum Mainnet |  3,324,324,324,357  |  0.001%                  | 10 million          |
 | aEGGS      | Arbitrum         |  3,324,324,324,357  |  0.002%                  | 20 million          |
 
-$EGGS started as an LBP on Copper/Fjord to get a fair price and distribution of tokens.
-Link to LBP [here](https://fjordfoundry.com/pools/mainnet/0x04EEECa0d37a238B46DeD385F04F956F6D9656A2).
-LBP managed to accrue around 188.78 ETH.
-Dev exited LBP and used 185 ETH and 175,000,000,000 EGGS to create an Uniswap V2 pool. Setting the price just below final LBP price.
-Some time after dev burned all his LP tokens. Most of the liquidity you see now is community owned.
+
+## Fair distribution
+
+An LBP on Copper/Fjord was created on 28th January, which accrued 188.78 ETH for the sale of approximately 2.15 Trillion $EGGS, 
+before the LBP ended on 2nd February. 185 ETH from the LBP was then paired with 175,000,000,000 $EGGS to create a Uniswap V2 pool, 
+with a price just below the final LBP price. Once sufficient liquidity had been added by the community, 
+the initial liquidity added by the dev was burned, so the remaining LP is community-owned which makes it safe from being rugged.
+
+The $aEGGS supply on Arbitrum was airdropped on March 18th, and distributed based on which mainnet vaults people were using 
+at the time of the snapshot - 70% went to people using the Big vault, 20% went to people using Full, 4% was used to provide LP on Sushiswap 
+and the final 6% was used for 'Shell Protector' wallets. The utility of Shell Protector wallets has not been announced yet.
+
+Important links / transactions:
+- LBP on Copper/Fjord - https://fjordfoundry.com/pools/mainnet/0x04EEECa0d37a238B46DeD385F04F956F6D9656A2
+- Initial LP created for Uniswap v2 - https://etherscan.io/tx/0x862aacc2f1ba0d2cdffb47654df8d97ccaada43e57066bd9d826ff7b0b4b0d53
+- Burning initial LP - https://etherscan.io/tx/0xc47b5b001c916453dd9e3497f318aa090b80014c5b372b3daa41862e683a0df0
 
 ## Rewards
 
-If you stake your tokens in either Big or Smol vaults, you will receive rewards for each block. 
-The table above shows how many rewards in total will be distributed per block. 
-All rewards you receive will not start to debase, until you claim them.
+If you stake your tokens in either Big or Smol vaults, you will receive a proportion of the rewards for each block. 
+At the moment 90% of rewards are distributed to Big vault, and 10% to Smol, but these numbers could be changed in the future.
 
-To see what % of rewards go to Big and Smol, please refer to the vaults table.
-Rewards can be changed by dev and is subject to change.
+A simle example of rewards distribution: if there are 10 million $EGGS rewarded per block on mainnet, and Smol vault receives 10% of rewards, 
+then 1million $EGGS will be distributed to people using Smol.
 
-Depositing or claiming will incur 24 hours lock on withdrawals.
-Depositing or claiming will not extend the timer but the timer will reset with another 24 hours.
-The debase is happening for the whole token supply including EGGS in vaults and EGGS in LP.
-Since EGGS in LP also gets debased the amount of EGGS will decrease but the amount of ETH will remain the same.
-That's the beauty of it since the price of EGGS will continue to increase if noone is selling and ETH is stable.
+The rewards you receive will not start to debase, until you claim or compound them.
 
 ## Contracts
 
